@@ -3,7 +3,7 @@ import { Text, View, Button } from 'react-native';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {count: 1000};
+    this.state = {count: 1};
       }
 
   componentDidUpdate() {
@@ -21,8 +21,6 @@ componentWillUnmount() {
   shouldComponentUpdate(nextProps, nextState) {
     
     if (this.state.count !== nextState.count) {
-      console.log ("----------Will be TRUE from ComponentUpdate---------")
-
       return true;
     }
     return false;

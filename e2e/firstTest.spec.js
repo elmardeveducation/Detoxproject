@@ -4,6 +4,7 @@ describe('Example', () => {
   });
 
   it('should have welcome screen', async () => {
+    
     await waitFor(element(by.id('mybutton'))).toBeVisible().withTimeout(3000);
         await element(by.id('mybutton')).tap();
         
